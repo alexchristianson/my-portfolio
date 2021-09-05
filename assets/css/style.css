@@ -1,3 +1,6 @@
+body {
+    background-color: palegoldenrod;
+}
 
 /* Header/nav bar styles section */
 header {
@@ -5,7 +8,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px;
-    background-color: gray;
+    background-color:darkslategrey;
 }
 
 header h1 {
@@ -37,74 +40,127 @@ header nav ul li a {
     font-size: 25px;
   }
 
-  /* Hero styles section */
-  .hero {
-    background-image: url('../images/hero-bg.jpg');
-    background-size: cover;
-    height: 200px;
-  }
+/* Hero styles section */
+.hero {
+background-image: url('../images/hero-bg.jpg');
+background-size: cover;
+height: 200px;
+}
 
-  .hero h2 {
-      text-align: right;
-      color: white;
-  }
+.hero h2 {
+    text-align: right;
+    color:turquoise;
+}
 
-  /* SECTION TITLE STYLES START */
+
+
+  /* SECTION STYLES START */
 .sections h3 {
-    font-size: 48px;
+    font-size: 36px;
+    color: darkslategrey;
     border-right: 3px solid;
     border-color: darkslategrey;
     text-align: right;
-    margin: 15px;
-    width: 16%;
+    padding-right: 15px;
+    flex:0 0 20%;
     padding: 10px 10px 10px 0;
     line-height: 1.1;
-  }
+}
 
-  .sections {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: flex-start;
-  }
-
-  .sections > div {
-      flex:0 0 75%;
-  }
-
-  /* About me styles section */
-  #profile {
-      width: 200px;
-      align-items: flex-start;
-  }
-
-  /* work styles section */
-
-  .flexbox {
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  #work-images {
+.sections {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sections > div {
+    flex:0 1 75%;
+}
+
+
+/* About me styles section */
+#profile {
+    max-width: 200px;
+    align-items: flex-end;
+    padding: 25px 0 25px 100px;
+}
+
+#about-me p {
+    text-align: left;
+}
+
+
+/* Work styles section */
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-  }
+}
 
-  #my-work img {
-      width: 300px;
-      height: 200px;
-      margin: 20px;
-      display: flex;
-      
-  }
+.work-image {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0.75;
+    border: 5px solid turquoise;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+    min-height: 200px;
+    max-height: 200px;
+    flex:1 0 40%;
+}
 
-  #first-project img {
-      width: 600px;
-      height: 400px;
-  }
+.project-label {
+    background-color: turquoise;
+    color: black;
+}
 
-  /*contact me styles section */
+.project-label h4 {
+    font-size: 24px;
+    margin: 10px auto 10px auto;
+}
 
-  /* footer styles section */
+.work-image:hover {
+    opacity: 1;
+}
+
+#run-buddy {
+    background-image: url(../images/02-run-buddy.jpg);
+    min-height: 400px;
+    flex:1 1 80%;
+}
+
+#led {
+    background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#calc {
+    background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#puzzle {
+    background-image: url(../images/02-portfolio-3.jpg);
+}
+
+#surf {
+    background-image: url(../images/02-portfolio-4.jpg);
+}
+
+
+/*contact me styles section */
+#contact-me a {
+    font-size: 24px;
+    margin: 40px;
+}
+
+/* footer styles section */
+footer {
+color: darkslategrey;
+width: 20%;
+margin: auto;
+}
