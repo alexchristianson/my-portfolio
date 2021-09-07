@@ -1,5 +1,5 @@
 body {
-    background-color: palegoldenrod;
+    background-color: lightgray;
 }
 
 /* Header/nav bar styles section */
@@ -8,17 +8,20 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px;
-    background-color:darkslategrey;
+    background-color: rgb(41, 41, 44);
 }
 
 header h1 {
     font-weight: bold;
     font-size: 40px;
-    color: orange
+    color: black;
+}
+
+#title {
+    background-color: turquoise;
 }
 
 header a {
-    text-decoration: none;
     color: turquoise;
 }
 
@@ -49,7 +52,10 @@ height: 200px;
 
 .hero h2 {
     text-align: right;
-    color:turquoise;
+    color: black;
+    background-color: turquoise;
+    max-width: 25%;
+    float:right;
 }
 
 
@@ -57,9 +63,9 @@ height: 200px;
   /* SECTION STYLES START */
 .sections h3 {
     font-size: 36px;
-    color: darkslategrey;
+    color: black;
     border-right: 3px solid;
-    border-color: darkslategrey;
+    border-color: black;
     text-align: right;
     padding-right: 15px;
     flex:0 0 20%;
@@ -154,13 +160,41 @@ height: 200px;
 
 /*contact me styles section */
 #contact-me a {
-    font-size: 24px;
-    margin: 40px;
+    font-size: 28px;
+    margin: 10px;
+    color: black;
+    text-decoration: turquoise;
+}
+
+#contact-me {
+    display: flex;
+}
+
+#contact-info {
+    flex: 1 1 75%;
 }
 
 /* footer styles section */
 footer {
-color: darkslategrey;
+color: black;
 width: 20%;
 margin: auto;
 }
+
+/* MEDIA QUERIES STYLING FOR SMALLER SCREENS */
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+   .sections h3 {
+       border: 3px solid;
+       flex: 1 0 80%;
+       text-align:center;
+   }
+}
+
+
+    
