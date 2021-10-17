@@ -135,14 +135,14 @@ height: 200px;
     opacity: 1;
 }
 
-#run-buddy {
-    background-image: url(../images/02-run-buddy.jpg);
+#reel-roulette {
+    background-image: url(../images/02-reel-roulette.jpg);
     min-height: 400px;
     flex:1 1 80%;
 }
 
-#led {
-    background-image: url(../images/02-portfolio-1.jpg);
+#run-buddy {
+    background-image: url(../images/02-run-buddy.jpg);
 }
 
 #calc {
