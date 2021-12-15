@@ -135,6 +135,12 @@ height: 200px;
     opacity: 1;
 }
 
+#gamespot-blog {
+    background-image: url(../images/02-gamespot-blog.jpg);
+    min-height: 400px;
+    flex:1 1 80%;
+}
+
 #reel-roulette {
     background-image: url(../images/02-reel-roulette.jpg);
     min-height: 400px;
